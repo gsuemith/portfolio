@@ -23,20 +23,33 @@
 .App-header {
   background-color: #0D1522;
   /* background-color: #8ecae6; */
-  min-height: 10vh;
+  min-height: 7vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: #fca311;
   border-bottom: 1px solid gray;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
 nav a {
-  padding-right: 1em;
+  margin-right: 1em;
   cursor: pointer;
   color: #61DAFB;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.active {
+  border-bottom: 2px solid #fca311;
 }
 
 .skew {
